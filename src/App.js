@@ -102,4 +102,9 @@ function App() {
   );
 }
 
+function Suma(a , b) {
+  return a + b
+}
+
+
 export default App;
