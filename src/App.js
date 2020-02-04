@@ -33,33 +33,31 @@ function App() {
   return 'marti'
   }
 
-  function Prob(a,b) {
+  function Prob(a, b) {
     let n = 0;
     let x = 0;
     let y = 0;
-    
-    if (a !== b) 
-    do {
-    x = a % 10
-    y = b % 10
-    if (x < y) {
-    n = n * 10 + x
-    }
-    else {
-    n = n * 10 + y
-    }
-    console.log(n);
-    a = Math.floor(a / 10)
-    b = Math.floor(b / 10)
 
-    console.log(a);
-    console.log(b);
-    }
-    while (a !== b) 
+    if (a !== b)
+      do {
+        x = a % 10
+        y = b % 10
+        if (x < y) {
+          n = n * 10 + x
+        }
+        else {
+          n = n * 10 + y
+        }
+        console.log(n);
+        a = Math.floor(a / 10)
+        b = Math.floor(b / 10)
+
+        console.log(a);
+      }
+      while (a !== b)
 
     return n
   }
-
 
   function Prob2(nr) {
     let a = 0
@@ -90,17 +88,6 @@ function App() {
       }
     }
   }
-
-
-
-  
-
-
-
-
-
-
-
 
     return (
     <div className="App">
