@@ -89,47 +89,24 @@ function App() {
     }
   }
 
-  function Prob3(x, y, S1, S2) {
-    let S1 = 0
-    let S2 = 0
-    do {
+
+  function Prob3(x, S1) {
+    S1 = 0
+    while (x !== 0) {
       c1 == x % 10
       S1 == S1 + c1
       x == Math.floor(x / 10)
     }
-    while x != 0
+    
   return 'S1'
   }
 
 
 
   include < iostream >
-    using namespace std;
-  //se declara variabilele a si b de tip intreg
-  //variabila a memoreaza primul numar introdus de la tastatura
-  //variabila b memoreaza al doilea numar introdus de la tastatura
-  int a, b;
-  int main()
-  {
-    //se citesc numerele a si b
-    cout << "Introduceti numerele a si b: " << endl;
-    cin >> a >> b;
-    //se determina cel mai mic divizor comun prin scaderi repetate
-    while (a != b) {
-      if (a > b)
-        a = a - b;
-      else
-        b = b - a;
-    }
-    //se afiseaza a (care memoreaza acum cmmdc-ul dintre cele 2 numere)
-    cout << "Cmmdc = " << a;
-  }
-
-
-
+  
   function Prob4(a, b) {
     let r = a % b
-    cin >> a >> b;
     while (a != b) {
       if (a > b)
         a = a - b;
@@ -148,11 +125,7 @@ function App() {
     return 'Numerele sunt prime intre ele'
     else
       return 'Numerele nu sunt prime intre ele'
-  }
-
-
-
-
+  
 
 
 
@@ -162,16 +135,49 @@ function App() {
         <p>
           {/* Aici poti sa pui orice functie */}
           {/* Suma cu pentru este {sumcupentru(1000)} */}
-          Numarul este {Prob4(12, 45)}
+          Numarul este {Prob8(3)}
         </p>
       </header>
     </div>
   );
 
 
-function Suma(a, b) {
-  return a + b
+
+function Prob5(i, j){
+  S = 0
+  for (int i = 1; i <= n; i++){
+    S += P
+    for (int j = 1; j <= i; j++){
+      P = 1
+    }
+  }
+  return n;
 }
 
+  
+function Prob6(n, i){
+  S = 0
+  for(i = 1; i <= n; i++){
+    S = S+2*i
+  }
+  return n
+} 
 
-export default App;
+function Prob7(n, i){
+  S = 0
+  P = 1
+  for(i = 1; i <= n; i++){
+    P = i
+    S += P
+  }
+  return n
+}
+
+function Prob8(n, i){
+  P = 1
+  for(i = 1; i <= n; i++){
+    S = S+P*i*(i+1);
+    P = P*(-1);
+  }
+}
+
